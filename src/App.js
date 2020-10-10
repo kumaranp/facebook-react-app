@@ -15,7 +15,7 @@ export default function App() {
     <Fragment>
       <ThemeProvider theme={theme}>
         <Header />
-        <Router history={browserHistory}>
+        <Router history={browserHistory} basename="/facebook-react-app">
           <Switch>
             <Route exact path="/">
               <SignIn />
